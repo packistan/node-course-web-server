@@ -38,12 +38,18 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/', (req, res) => {
   res.render('home.hbs', {
     pageTitle: 'About Page',
-    welcomeMessage: 'Hello bitch'
+    welcomeMessage: 'Hello mate'
   })
 });
 
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
+    pageTitle: 'About Page'
+  })
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
     pageTitle: 'About Page'
   })
 });
